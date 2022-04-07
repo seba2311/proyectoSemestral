@@ -1,0 +1,39 @@
+.fondo{
+   background : brown;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    width: 90%;
+  }
+
+  .box2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    
+    width: 70%;
+  }
+
+  #margenGaleria{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+#margen{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.colorTexto{
+    color: brown;
+    text-align: center;
+   }
+
+   h1{
+       align-items:center;
+   }
