@@ -2,6 +2,7 @@
 .fondo{
    
    background-image: url(imagenes/Fondo.Plantas.10.webp);
+   cursor: url(imagenes/cursor-removebg-preview.png), url(imagenes/cursor2-removebg-preview.png), pointer;
 }
 
 .box {
@@ -150,3 +151,31 @@
   .orillar{
     margin-left: auto;
   }
+  .encabezado{
+    background-color: pink;
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+
+  .boxMapa{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 10px black;
+  }
+
+ 
+
+  .header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
