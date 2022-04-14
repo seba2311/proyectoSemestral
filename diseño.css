@@ -20,7 +20,7 @@
   }
   .box3{
     
-      margin-left: 10%;
+      margin-left: auto;
       margin-right: auto;
       
       
@@ -61,4 +61,12 @@
     background : white;
     
     width: 90%;
+  }
+
+  .boxFormulario {
+    margin-left: auto;
+    margin-right: auto;
+    background:blue;
+    
+    width: 60%;
   }
