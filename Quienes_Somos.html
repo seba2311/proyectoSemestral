@@ -8,93 +8,83 @@
     <link rel="stylesheet" href="diseño.css">
     <title>Document</title>
 </head>
-<body class="fondo1">
+<body class="fondo">
   
     <!--menu-->
-     <div class="box">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <img src="imagenes/36375.png" alt="" height="100">
-
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <h1 >Tienda</h1>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
-                    </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Quienes_Somos.html">¿Quienes somos?</a>
-                    </li>-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="Tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tienda
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="Comprar.html">Comprar</a></li>
-                            <li><a class="dropdown-item" href="Estado_Orden.html">Revisar estado de orden</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Index.html">Iniciar sesion</a>
-                    </li>
-                   
-                </ul>
-            </div>
+    <div class="box">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <img src="imagenes/36375.png" alt="" height="100">
+  
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <h1 >Tienda</h1>
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Quienes_Somos.html">¿Quienes somos?</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Tienda
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="tienda.html">Plantas</a></li>
+                              <li><a class="dropdown-item" href="maceteros.html">Maceteros</a></li>
+                              <li><a class="dropdown-item" href="tierraHoja.html">Tierra de hojas</a></li>
+                              <li><a class="dropdown-item" href="#">Revisar estado de orden</a></li>
+                              
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                              <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    iniciar sesion
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">iniciar sesion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </nav>
-   </div>
-
-   <!--carrusel-->
-   <!--<div class="box2">
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagenes/planta1.jpg" class="d-block w-100" alt="..." height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="imagenes/macetero4.jpg" class="d-block w-100" alt="..." height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="imagenes/planta2.jpeg" class="d-block w-100" alt="..." height="500">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-   </div>-->
+        <div class="modal-body">
+          <div class="contenedor-input">
+           
+           
+           
+           
+            <input class="col-xl" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" required="" minlength="3" maxlength="10">
+            <input class="col-xl" type="password" name="txtPass1" id="txtPass1" placeholder="ingrese contraseña" required="" minlength="8" maxlength="12">
+           
+           
+        
     
-   <!--galeria-->
-
-   <div class="box3" id="margen">
-
-    <!--<div class="card-group" >-->
-     
-        <!--<div class="card-body">-->
-          </div>      
-          <table>
-            <tr> <td><div class="card" id="margenGaleria">
-              <a href=""><img src="Imagenes/Somos.jpg" class="rounded float" alt="..." height="200"></a></tr></td>
-              <td> <p class="text-end">Somos una empresa especialista en paisajismo y jardinería, dedicada al mantenimiento, 
-                diseño y decoración de sus áreas verdes.
-                Ponemos a su disposición nuestra experiencia y dedicación, para en conjunto diseñar y mantener su 
-                jardín o áreas verdes de su empresa. De esta manera satisfacer sus requerimientos y necesidades.
-             
-                Creemos en la importancia que tienen las áreas verdes en nuestra comunidad y es por ello que todos 
-                nuestros servicios son garantizados y seguidos para asegurar la vitalidad de nuestras áreas verdes y 
-                conformidad del cliente.</p></td>
-              <tr></tr>
-          </table>
         </div>
-     
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+          <a href="Index.html"><button type="button" class="btn btn-primary" >Iniciar sesion</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+                      </li>
+                     
+                  </ul>
+              </div>
+          </div>
+      </nav>
+     </div>
+
+   <div class="box3">
+     <img src="imagenes/Somos.jpg" alt=""height="500">  
+
+   </div>
 
 
 
