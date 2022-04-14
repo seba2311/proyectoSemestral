@@ -25,7 +25,7 @@
                                 <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">¿Quienes somos?</a>
+                                <a class="nav-link active" aria-current="page" href="Quienes_Somos.html">¿Quienes somos?</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,7 +40,40 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Iniciar sesion</a>
+                                    <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          iniciar sesion
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">iniciar sesion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="contenedor-input">
+                 
+                 
+                 
+                 
+                  <input class="col-xl" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" required="" minlength="3" maxlength="10">
+                  <input class="col-xl" type="password" name="txtPass1" id="txtPass1" placeholder="ingrese contraseña" required="" minlength="8" maxlength="12">
+                 
+                 
+              
+          
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+                <a href="Index.html"><button type="button" class="btn btn-primary" >Iniciar sesion</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
                             </li>
                            
                         </ul>
