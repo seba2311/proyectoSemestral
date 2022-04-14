@@ -1,14 +1,66 @@
-<div class="contenedor-input">
-    <input class="col-xl" type="text" name="txtNombre" id="txtNombre" placeholder="ingrese nombre" pattern="[A-Za-z ]{3,45}" title="solo letras entre 3 a 45 caracteres">
-    <input class="col-xl" type="text" name="txtRut" id="txtRut" placeholder="ingrese rut ej. 12345678-9">
-    <input class="col-xl" type="date" name="txtFechaNaci" id="txtFechaNaci" required="">
-    <input class="col-xl" type="email" name="txtEmail" id="txtEmail" placeholder="ingrese email" required="">
-    <input class="col-xl" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" required="" minlength="3" maxlength="10">
-    <input class="col-xl" type="password" name="txtPass1" id="txtPass1" placeholder="ingrese password" required="" minlength="8" maxlength="12">
-    <input class="col-xl" type="password" name="txtPass2" id="txtPass2" placeholder="ingrese nuevamente la password">
-    <input class="col-xl" type="text" name="txtFono" id="txtFono" placeholder="ingrese fono" required="" minlength="8" pattern="[0-9]{8,9}" title="ingrese un telefono de casa ej. 252554587">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"
+crossorigin="anonymous">
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<php
+if (! empty($_GET["i"])) {
+$template = intval($_GET["i"]);
+}
+if (empty($template)) {
+$template = 1;
+}
+require_once __DIR__ . '/template/login-template' . $template . '.php';
+>
 
-    <input class="btn-registrar" type="submit" value="Registrar">
-    <input class="btn-registrar" type="reset" value="Limpiar">
-   
-</div>
+<div id="template-bg-1">
+    <div
+    class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+    <div class="card p-4 text-light bg-dark mb-5">
+    <div class="card-header">
+    <h3>Iniciar sesión </h3>
+    </div>
+    <div class="card-body w-100">
+    <form name="login" action="" method="post">
+    <div class="input-group form-group mt-3">
+    <div class="bg-secondary rounded-start">
+    <span class="m-3"><i class="fas fa-user mt-2"></i></span>
+    </div>
+    <input type="text" class="form-control" placeholder="Usuario"
+    name="username">
+    </div>
+    <div class="input-group form-group mt-3">
+    <div class="bg-secondary rounded-start">
+    <span class="m-3"><i class="fas fa-key mt-2"></i></span>
+    </div>
+    <input type="password" class="form-control" placeholder="Contraseña"
+    name="password">
+    </div>
+    
+    <div class="form-group mt-3">
+    <input type="submit" value="Acceder"
+    class="btn bg-secondary float-end text-white w-100"
+    name="login-btn">
+    </div>
+    </form>
+    <?php if(!empty($loginResult)){?>
+    <div class="text-danger"><?php echo $loginResult;?></div>
+    <?php }?>
+    </div>
+    <div class="card-footer">
+    <div class="d-flex justify-content-center">
+    <div class="text-primary">Si es un usuario registrado, inicie sesión aquí.</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

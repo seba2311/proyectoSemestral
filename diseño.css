@@ -31,6 +31,8 @@
   }
 
   #margenGaleria{
+    border-radius: 15px;
+    border: solid 10px cyan;
     margin-top: 1%;
     margin-left: 1%;
     margin-right: 1%;
@@ -113,4 +115,38 @@
     margin-right: auto;
     
     
+  }
+  .FormFormulario2{
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background : rgb(6, 70, 189);
+    
+    width: 100%;
+  }
+  .boxFormulario2 {
+    margin-left: 30%;
+    margin-right: auto; 
+    width: 100%;
+  }
+  .inicioSesion{
+    margin-top: 1%;
+    background-image: url(imagenes/Fondo.Plantas.10.webp);
+    border-radius: 15px;
+  }
+  #colorTexto5{
+    color: white;   
+    
+  }
+  a{
+    color: white;
+  }
+  a:hover {
+   
+    color: #1717FF;
+    cursor: pointer;
+  }
+  .orillar{
+    margin-left: auto;
   }
