@@ -14,78 +14,92 @@
     <div class="box">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-              <img src="imagenes/36375.png" alt="" height="100">
-  
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <h1 >Tienda</h1>
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="Quienes_Somos.html">¿Quienes somos?</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Tienda
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="tienda.html">Plantas</a></li>
-                              <li><a class="dropdown-item" href="maceteros.html">Maceteros</a></li>
-                              <li><a class="dropdown-item" href="tierraHoja.html">Tierra de hojas</a></li>
-                              <li><a class="dropdown-item" href="#">Revisar estado de orden</a></li>
-                              
-                          </ul>
-                      </li>
-                      <li class="nav-item">
-                              <!-- Button trigger modal -->
+            <a class="navbar-brand" href="#"><img src="imagenes/36375.png" alt="" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Quienes_Somos.html">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tienda
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="tienda.html">Plantas</a></li>
+                      <li><a class="dropdown-item" href="maceteros.html">Maceteros</a></li>
+                      <li><a class="dropdown-item" href="tierraHoja.html">Tierra de hojas</a></li>
+                      <li><a class="dropdown-item" href="#">Revisar estado de orden</a></li>
+                     
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    iniciar sesion
+  iniciar sesion
   </button>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">iniciar sesion</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="contenedor-input">
-           
-           
-           
-           
-            <input class="col-xl" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" required="" minlength="3" maxlength="10">
-            <input class="col-xl" type="password" name="txtPass1" id="txtPass1" placeholder="ingrese contraseña" required="" minlength="8" maxlength="12">
-           
-           
-        
-    
-        </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
-          <a href="Index.html"><button type="button" class="btn btn-primary" >Iniciar sesion</button></a>
-        </div>
-      </div>
-    </div>
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">iniciar sesion</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
-                      </li>
-                     
-                  </ul>
-              </div>
+  <div class="modal-body">
+  <div class="contenedor-input">
+  
+  
+  
+  <table>
+    <tr>
+      <td>
+        <input class="col-xl" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" required="" minlength="3" maxlength="10">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input class="col-xl" type="password" name="txtPass1" id="txtPass1" placeholder="ingrese contraseña" required="" minlength="8" maxlength="12">
+      </td>
+    </tr>
+  </table>
+  
+  
+  <a href="registro.html">Crear Cuenta</a>
+                      
+  
+  
+  
+  
+  </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+  <a href="Index.html"><button type="button" class="btn btn-primary" >Iniciar sesion</button></a>
+  </div>
+  </div>
+  </div>
+  </div>
+          </li>
+         
+              </ul>
+            
+            </div>
           </div>
-      </nav>
-     </div>
+        </nav>
+      </div>
 
-   <div class="box3">
-     <img src="imagenes/Somos.jpg" alt=""height="500">  
+   <div class="box">
+    <img src="imagenes/Somos.jpg" class="rounded mx-auto d-block" alt="100" height="500">
 
    </div>
-   <div class="box4"><p>Somos una empresa especialista en paisajismo y jardinería, dedicada al mantenimiento, diseño y decoración de sus áreas verdes. Ponemos a su disposición nuestra experiencia y dedicación, para en conjunto diseñar y mantener su jardín o áreas verdes de su empresa. De esta manera satisfacer sus requerimientos y necesidades. Creemos en la importancia que tienen las áreas verdes en nuestra comunidad y es por ello que todos nuestros servicios son garantizados y seguidos para asegurar la vitalidad de nuestras áreas verdes y conformidad del cliente.</p></div>
+   <div class="box4"><h1 id="colorTexto4">Somos una empresa especialista en paisajismo y jardinería, dedicada al mantenimiento, diseño y decoración de sus áreas verdes. Ponemos a su disposición nuestra experiencia y dedicación, para en conjunto diseñar y mantener su jardín o áreas verdes de su empresa. De esta manera satisfacer sus requerimientos y necesidades. Creemos en la importancia que tienen las áreas verdes en nuestra comunidad y es por ello que todos nuestros servicios son garantizados y seguidos para asegurar la vitalidad de nuestras áreas verdes y conformidad del cliente.</h1></div>
 
 
 

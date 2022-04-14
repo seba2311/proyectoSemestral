@@ -1,5 +1,7 @@
+
 .fondo{
-   background : brown;
+   
+   background-image: url(imagenes/Fondo.Plantas.10.webp);
 }
 
 .box {
@@ -29,6 +31,7 @@
   }
 
   #margenGaleria{
+    margin-top: 1%;
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -51,22 +54,63 @@
     margin-top: 1%;
    }
    .bordes{
-     margin-top: 1%;
-     
+     margin-top: 10%;
+     border: solid 2px black;
      background:white;
    }
    .box4 {
     margin-left: auto;
     margin-right: auto;
-    background : white;
+    color: black;
     
     width: 90%;
   }
 
   .boxFormulario {
+    margin-left: 30%;
+    margin-right: auto; 
+    width: 100%;
+  }
+  .FormFormulario{
+    border-radius: 15px;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    background:blue;
+    background : rgb(6, 70, 189);
     
-    width: 60%;
+    width: 40%;
+  }
+  .formTexto{
+    width: 800%;
+  }
+  #colorTexto2{
+    color: white;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+  }
+
+  .boxtabla {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 90%;
+  }
+
+  #colorTexto3{
+    margin-top: 1%;
+    color: white;
+    background: rgba(13, 225, 91, 0.758);
+    width: 20%;
+  }
+
+  #colorTexto4{
+    color: white;
+    background: green;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
   }

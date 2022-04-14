@@ -6,153 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="diseño.css">
-    <title>Maceteros</title>
+    <title>Document</title>
 </head>
 <body class="fondo">
-        <!--menu-->
 
-        <div class="box">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <img src="imagenes/36375.png" alt="" height="100">
-        
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <h1 >Tienda</h1>
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Quienes_Somos.html">¿Quienes somos?</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tienda
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="tienda.html">Plantas</a></li>
-                                    <li><a class="dropdown-item" href="maceteros.html">Maceteros</a></li>
-                                    <li><a class="dropdown-item" href="tierraHoja.html">Tierra de hojas</a></li>
-                                    <li><a class="dropdown-item" href="#">Revisar estado de orden</a></li>
-                                    
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                    <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          iniciar sesion
-        </button>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">iniciar sesion</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="contenedor-input">
-                 
-                 
-                 
-                 
-                  <input class="col-xl" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" required="" minlength="3" maxlength="10">
-                  <input class="col-xl" type="password" name="txtPass1" id="txtPass1" placeholder="ingrese contraseña" required="" minlength="8" maxlength="12">
-                 
-                 
+    <!--menu-->
+    <div class="box">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="imagenes/36375.png" alt="" height="50"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Quienes_Somos.html">¿Quienes somos?</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tienda
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="tienda.html">Plantas</a></li>
+                        <li><a class="dropdown-item" href="maceteros.html">Maceteros</a></li>
+                        <li><a class="dropdown-item" href="tierraHoja.html">Tierra de hojas</a></li>
+                        <li><a class="dropdown-item" href="#">Revisar estado de orden</a></li>
+                       
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    iniciar sesion
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">iniciar sesion</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <div class="contenedor-input">
+    
+    
+    
+    <table>
+      <tr>
+        <td>
+          <input class="col-xl" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" required="" minlength="3" maxlength="10">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="col-xl" type="password" name="txtPass1" id="txtPass1" placeholder="ingrese contraseña" required="" minlength="8" maxlength="12">
+        </td>
+      </tr>
+    </table>
+    
+    
+    <a href="registro.html">Crear Cuenta</a>
+                        
+    
+    
+    
+    
+    </div>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+    <a href="Index.html"><button type="button" class="btn btn-primary" >Iniciar sesion</button></a>
+    </div>
+    </div>
+    </div>
+    </div>
+            </li>
+           
+                </ul>
               
-          
-              </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
-                <a href="Index.html"><button type="button" class="btn btn-primary" >Iniciar sesion</button></a>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-           </div>
-
-
-       <table class="box">
-        <tr class="bordes">
-            <td>
-                <div >
-
-                    <div class="card-group" >
-                    <div class="card" id="margenGaleria">
-                     <a href=""><img src="Imagenes/macetero3.jpg" class="card-img-top" alt="..." height="200"></a>
-                     <div class="card-body">
-                       
-                     </div>
-                   </div>                 
-                 </div>
-                 </div>
-            </td>
-            <td>
-                <h4 class="margenTex">Precio:$5.000 <br>
+        <center><h1 id="colorTexto3">Nuestras Macetas</h1></center>
+        
+    <!--galeria-->
+    <div class="box" id="margen">
+        <div class="card-group" >
+            <div class="card" style="width: 18rem;" id="margenGaleria">
+                <img src="imagenes/macetero1.jpg" class="card-img-top" alt="100" height="300">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"><h4 class="margenTex">Precio:$10.000 <br>
                     Stock : 20 <br>
                     Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
-                  </h4>
-                  <button type="button" class="btn btn-primary btn-lg">Agregar</button>
-            </td>
-        </tr>
-        <tr class="bordes">
-            <td>
-                <div >
-
-                    <div class="card-group" >
-                    <div class="card" id="margenGaleria">
-                     <a href=""><img src="Imagenes/macetero1.jpg" class="card-img-top" alt="..." height="200"></a>
-                     <div class="card-body">
-                       
-                     </div>
-                   </div>                 
-                 </div>
-                 </div>
-            </td>
-            <td>
-                <h4 class="margenTex">Precio:$10.000 <br>
-                    Stock : 10 <br>
-                    Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
-                  </h4>
-                  <button type="button" class="btn btn-primary btn-lg">Agregar</button>
-            </td>
-        </tr>
-        <tr class="bordes">
-            <td>
-                <div >
-
-                    <div class="card-group" >
-                    <div class="card" id="margenGaleria">
-                     <a href=""><img src="Imagenes/macetero2.jpeg" class="card-img-top" alt="..." height="200"></a>
-                     <div class="card-body">
-                       
-                     </div>
-                   </div>                 
-                 </div>
-                 </div>
-            </td>
-            <td>
-                <h4 class="margenTex">Precio:$8.000 <br>
-                    Stock : 25 <br>
-                    Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
-            
-                  </h4>
-                  <button type="button" class="btn btn-primary btn-lg">Agregar</button>
-            </td>
-        </tr>   
-    </table>
-
+                  </h4></p>
+                  <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+              </div>
     
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              <div class="card" style="width: 18rem;" id="margenGaleria">
+                <img src="imagenes/macetero2.jpeg" class="card-img-top" alt="100" height="300">
+                <div class="card-body">
+                  <h5 class="card-title"> </h5>
+                  <p class="card-text"><h4 class="margenTex">Precio:$12.000 <br>
+                    Stock : 20 <br>
+                    Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
+                  </h4></p>
+                  <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" id="margenGaleria">
+                <img src="imagenes/macetero3.jpg" class="card-img-top" alt="100" height="300">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"><h4 class="margenTex">Precio:$8.000 <br>
+                    Stock : 15 <br>
+                    Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
+                  </h4></p>
+                  <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+              </div>
+        </div>
+        <div class="card-group" >
+            <div class="card" style="width: 18rem;" id="margenGaleria">
+                <img src="imagenes/macetero4.jpg" class="card-img-top" alt="100" height="300">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"><h4 class="margenTex">Precio:$5.000 <br>
+                    Stock : 20 <br>
+                    Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
+                  </h4></p>
+                  <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 18rem;" id="margenGaleria">
+                <img src="imagenes/macetero5.jpg" class="card-img-top" alt="100" height="300">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"><h4 class="margenTex">Precio:$3.000 <br>
+                    Stock : 40 <br>
+                    Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
+                  </h4></p>
+                  <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" id="margenGaleria">
+                <img src="imagenes/macetero6.jpg" class="card-img-top" alt="100" height="300">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"><h4 class="margenTex">Precio:$8.000 <br>
+                    Stock : 30 <br>
+                    Descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta neque assumenda perspiciatis non qui adipisci maxime, voluptas eaque quod eligendi odit libero fugit, nostrum doloremque accusamus illum quas ducimus error?
+                  </h4></p>
+                  <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+              </div>
+        </div>
+
+  
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
