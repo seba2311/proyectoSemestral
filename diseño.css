@@ -5,6 +5,12 @@
    cursor: url(imagenes/cursor-removebg-preview.png), url(imagenes/cursor2-removebg-preview.png), pointer;
 }
 
+.fondo2{
+   
+  background-image: url(imagenes/546888.jpg);
+  cursor: url(imagenes/cursor-removebg-preview.png), url(imagenes/cursor2-removebg-preview.png), pointer;
+}
+
 .box {
     margin-left: auto;
     margin-right: auto;
