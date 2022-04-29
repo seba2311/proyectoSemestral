@@ -188,3 +188,16 @@
 #relleno{
   padding-right: 10%;
 }
+
+
+#formulario55{
+  background: greenyellow;
+  
+  width: 30%;
+}
+#rellenoFormulario{
+  width: 50%;
+  margin-left: auto;
+  margin-right: 20%;
+
+}
