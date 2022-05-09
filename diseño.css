@@ -5,9 +5,20 @@
    cursor: url(imagenes/cursor-removebg-preview.png), url(imagenes/cursor2-removebg-preview.png), pointer;
 }
 
+.fondo:before {
+  content: "";
+  width: 100%;
+  min-height: 200vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-image: linear-gradient(rgb(208, 243, 191), rgb(254, 254, 254));
+  opacity: 0.5;
+  z-index: -1;
+}
+
 .fondo2{
 
-  background-image: url(imagenes/546888.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -218,4 +229,8 @@
   margin-left: auto;
   margin-right: auto;
 
+}
+
+Col.BTN{
+ color: black;
 }
