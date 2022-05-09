@@ -6,10 +6,27 @@
 }
 
 .fondo2{
-   
+
   background-image: url(imagenes/546888.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   cursor: url(imagenes/cursor-removebg-preview.png), url(imagenes/cursor2-removebg-preview.png), pointer;
 }
+
+.fondo2:before {
+  content: "";
+  width: 100%;
+  min-height: 200vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-image: linear-gradient(rgb(208, 243, 191), rgb(254, 254, 254));
+  opacity: 0.5;
+  z-index: -1;
+}
+
 
 .box {
     margin-left: auto;
@@ -39,7 +56,7 @@
 
   #margenGaleria{
     border-radius: 15px;
-    border: solid 10px cyan;
+    border: solid 10px rgb(255, 230, 0);
     margin-top: 1%;
     margin-left: 1%;
     margin-right: 1%;
