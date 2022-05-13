@@ -1,0 +1,236 @@
+
+.fondo{
+   
+   background-image: url(imagenes/Fondo.Plantas.10.webp);
+   cursor: url(imagenes/cursor-removebg-preview.png), url(imagenes/cursor2-removebg-preview.png), pointer;
+}
+
+.fondo:before {
+  content: "";
+  width: 100%;
+  min-height: 200vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-image: linear-gradient(rgb(208, 243, 191), rgb(254, 254, 254));
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.fondo2{
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: url(imagenes/cursor-removebg-preview.png), url(imagenes/cursor2-removebg-preview.png), pointer;
+}
+
+.fondo2:before {
+  content: "";
+  width: 100%;
+  min-height: 200vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-image: linear-gradient(rgb(208, 243, 191), rgb(254, 254, 254));
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    width: 90%;
+  }
+
+  .box2 {
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    
+    width: 30%;
+  }
+  .box3{
+    
+      margin-left: auto;
+      margin-right: auto;
+      
+      
+      width: 90%;
+  
+  }
+
+  #margenGaleria{
+    border-radius: 15px;
+    border: solid 10px rgb(255, 230, 0);
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+#margen{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.colorTexto{
+    color: brown;
+    text-align: center;
+   }
+
+   h1{
+       align-items:center;
+   }
+   .margenTex{
+    margin-top: 1%;
+   }
+   .bordes{
+     margin-top: 10%;
+     border: solid 2px black;
+     background:white;
+   }
+   .box4 {
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    
+    width: 90%;
+  }
+
+  .boxFormulario {
+    margin-left: 30%;
+    margin-right: auto; 
+    width: 100%;
+  }
+  .FormFormulario{
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background : rgb(6, 70, 189);
+    
+    width: 40%;
+  }
+  .formTexto{
+    width: 800%;
+  }
+  #colorTexto2{
+    color: white;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+  }
+
+  .boxtabla {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 90%;
+  }
+
+  #colorTexto3{
+    margin-top: 1%;
+    color: white;
+    background: rgba(13, 225, 91, 0.758);
+    width: 20%;
+  }
+
+  #colorTexto4{
+    color: white;
+    background: green;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+  }
+  .FormFormulario2{
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background : rgb(6, 70, 189);
+    
+    width: 100%;
+  }
+  .boxFormulario2 {
+    margin-left: 30%;
+    margin-right: auto; 
+    width: 100%;
+  }
+  .inicioSesion{
+    margin-top: 1%;
+    background-image: url(imagenes/Fondo.Plantas.10.webp);
+    border-radius: 15px;
+  }
+  #colorTexto5{
+    color: white;   
+    
+  }
+  a{
+    color: white;
+  }
+  a:hover {
+   
+    color: #1717FF;
+    cursor: pointer;
+  }
+  .orillar{
+    margin-left: auto;
+  }
+  .encabezado{
+    background-color: pink;
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+
+  .boxMapa{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 10px black;
+  }
+
+ 
+
+  .header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+#relleno{
+  padding-right: 10%;
+}
+
+
+#formulario55{
+  background: greenyellow;
+  margin-top: 3%;
+  border-radius: 5px;
+  width: 30%;
+}
+#rellenoFormulario{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+Col.BTN{
+ color: black;
+}
