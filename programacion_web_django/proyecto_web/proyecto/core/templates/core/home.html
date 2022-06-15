@@ -9,11 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{%static 'core/css/diseño.css'%}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <title>Inicio!</title>
   </head>
   <body class="margen" >
      <!--menu-->    
+     
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home'%}"><img src="{%static 'core/img/36375.png'%}" width="100" height="100"></a>
@@ -23,26 +23,61 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'tienda'%}">Tienda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'quienesSomos'%}">¿Quienes somos?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link active" aria-current="page" href="{%url 'tienda2'%}">Agregar Producto</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'registro'%}">Registro</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{%url 'carrito'%}">Lista de productos</a>
+              </li>
 
+              {%if user.is_authenticated%}
+              <li class="nav-item">
+                <a href="{% url 'logout'%}" class="nav-link active">Cerrar sesión</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link active">@{{user.username}}</a>
+              </li>
+              {%else%}
+              <li class="nav-item">
+                <a href="{%url 'login'%}" class="nav-link active">Iniciar sesión</a>
+              </li>
+              {%endif%}
+
+              
             </ul>
             
           </div>
         </div>
       </nav>
 
+      <!--mostrar
+      <table class="table" id="tablaNombre">
+        <thead >
+            <tr><th scope="col">nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+          {% for us in usuarios %}
+            <tr>
+                <td><h3 class="nav-link active">{{us.nombre_usuario}}</h3></td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    mostrar-->
+
 <!--carrusel-->
 <br>
+
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -64,6 +99,82 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!--retornar datos de usuario-->
+<div style="display: none;">
+  <table class="table" >
+ 
+    <tbody id="tablaNombres">
+    {% for us in usuarios %}
+    <tr><td>{{us.nombre_usuario}}</td></tr>
+    {% endfor %}
+    </tbody>
+    <tbody id="tablaCorreo">
+      {% for us in usuarios %}
+      <tr><td>{{us.correo}}</td></tr>
+      {% endfor %}
+      </tbody>
+  <tbody id="tablaClaves">
+    {% for us in usuarios %}
+    <tr><td>{{us.clave}}</td></tr>
+    {% endfor %}
+  </tbody>
+  </table>
+ 
+</div>
+<!--retornar datos de usuario-->
+<!--validar datos de usuario-->
+<script>
+  // Definimos el array donde guardaremos los datos...
+  var nombres = [];
+  var claves=[];
+  var correos=[];
+
+  // Obtenemos la variable con las filas de tbody...
+  var rows = document.getElementById('tablaNombres').rows;
+  var rows2 = document.getElementById('tablaClaves').rows;
+  var rows3 = document.getElementById('tablaCorreo').rows;
+
+  // Recorremos las filas y añadimos al array el valor de las celdas con los offset 1 (capítulo) y 3 (porcentaje)...
+  for (var i = 0; i < rows.length; i++) {
+      nombres.push([ rows[i].cells[0].innerHTML]);
+  }
+  for (var i = 0; i < rows2.length; i++) {
+      claves.push([ rows2[i].cells[0].innerHTML]);
+  }
+  for (var i = 0; i < rows3.length; i++) {
+      correos.push([ rows3[i].cells[0].innerHTML]);
+  }
+
+  // Ya tenemos los datos guardados, ahora hacemos lo que queramos con ellos...
+  console.log(nombres);
+  console.log(claves);
+  console.log(correos);
+  function retornarValor(){
+    document.getElementById("valorValido").innerHTML = ""; 
+    let inputNombre = document.getElementById("validarNombre").value;
+    let inputClave =document.getElementById("validarClave").value;
+    var usuarioValidado=false;
+    for (var i=0; i<nombres.length; i++){
+    if(inputNombre==correos[i] && inputClave==claves[i]){
+      usuarioValidado=true;
+    }
+    if(usuarioValidado==true){
+      document.getElementById("valorValido").innerHTML = "bienvenido: "+nombres[i]; 
+      document.getElementById("validarNombre").innerHTML="";
+      document.getElementById("validarClave").innerHTML="";
+      break
+    }
+    }
+  }
+  
+</script>
+<!--validar datos de usuario-->
+
+
+
+
+
 <!--imagenes-->
 <br>
 <center><h1>Galeria</h1></center>
@@ -73,6 +184,11 @@
         <td><img class="border border-dark rounded-circle" src="{%static 'core/img/arbusto1.jpg'%}"  height="300" width="300"> </td>
         <td><img class="border border-dark rounded-circle" src="{%static 'core/img/macetero6.jpg'%}" height="300" width="300"> </td>
         <td><img class="border border-dark rounded-circle" src="{%static 'core/img/planta5.jpg'%}" height="300" width="300" > </td>
+    </tr>
+    <tr>
+      <td><img class="border border-dark rounded-circle" src="{%static 'core/img/arbusto3.webp'%}" height="300" width="300" > </td>
+      <td><img class="border border-dark rounded-circle" src="{%static 'core/img/planta4.jpg'%}" height="300" width="300" > </td>
+      <td><img class="border border-dark rounded-circle" src="{%static 'core/img/macetero2.jpeg'%}" height="300" width="300" > </td>
     </tr>
     </table>
 </div>
@@ -180,6 +296,21 @@
   </footer>
   <!-- Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  {%if messages%}
+      {%for m in messages%}
+        <script>
+          Swal.fire({
+            "title":"Felicitaciones",
+            "text" : "{{m}}",
+            "icon":"success"
+          })
+        </script>
+      {%endfor%}
+      {%endif%}
+
+  <script src="{%static 'core/JS/carrito.js'%}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
